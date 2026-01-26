@@ -91,9 +91,9 @@ const Services = () => {
             {/* --- Page Header --- */}
             <Section bg="primary" className="!py-28 relative overflow-hidden">
                 {/* Visual Accent */}
-                <div className="absolute top-0 right-0 w-full h-full opacity-5 pointer-events-none">
+                <div className="absolute top-0 right-0 w-full h-full pointer-events-none text-secondary">
                     <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <path d="M0 100 C 20 0 50 0 100 100 Z" fill="white" />
+                        <path d="M0 100 C 20 0 50 0 100 100 Z" fill="currentColor" />
                     </svg>
                 </div>
 
@@ -125,19 +125,16 @@ const Services = () => {
             </Section>
 
             {/* --- Bottom CTA --- */}
-            <Section bg="gray" className="!py-20">
-                <div className="bg-primary rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden shadow-2xl shadow-primary/20">
-                    <div className="absolute top-0 right-0 p-10 opacity-10">
-                        <TrendingUp size={200} className="text-white" />
-                    </div>
+            <Section bg="white" className="!py-20">
+                <div className="bg-primary rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden border border-secondary">
                     <div className="relative z-10 max-w-2xl mx-auto">
                         <h2 className="text-3xl md:text-5xl font-black text-white mb-8">Ready to transform your operations?</h2>
-                        <p className="text-white mb-12 text-lg">Our team of experts is ready to help you implement strategic systems that drive results.</p>
+                        <p className="text-white mb-12 text-lg font-medium">Our team of experts is ready to help you implement strategic systems that drive results.</p>
                         <div className="flex flex-col sm:flex-row justify-center gap-6">
-                            <button className="px-12 py-5 bg-secondary text-primary-dark font-black rounded-full hover:bg-white transition-all transform hover:scale-105 shadow-xl">
+                            <button className="px-12 py-5 bg-secondary text-white font-black rounded-full border border-white hover:bg-white hover:text-primary transition-all transform hover:scale-105">
                                 SCHEDULE A CONSULTATION
                             </button>
-                            <button className="px-12 py-5 bg-white/10 text-white font-bold rounded-full border border-white/20 hover:bg-white/20 transition-all">
+                            <button className="px-12 py-5 bg-primary text-white font-bold rounded-full border border-white hover:bg-secondary transition-all">
                                 VIEW CASE STUDIES
                             </button>
                         </div>

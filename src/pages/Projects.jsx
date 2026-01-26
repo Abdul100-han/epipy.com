@@ -44,7 +44,7 @@ const Projects = () => {
         <div className="overflow-hidden">
             {/* --- Page Header --- */}
             <Section bg="primary" className="!py-24 relative overflow-hidden">
-                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-white/5 skew-y-3 pointer-events-none" />
+                <div className="absolute inset-x-0 bottom-0 h-1 bg-secondary skew-y-3 pointer-events-none" />
                 <div className="relative z-10 text-center max-w-3xl mx-auto">
                     <h1 className="text-5xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter">
                         Our <span className="text-secondary">Experience</span>
@@ -62,14 +62,14 @@ const Projects = () => {
                     {experienceAreas.map((area, index) => (
                         <div
                             key={index}
-                            className={`${area.bgColor} p-10 rounded-[2.5rem] border border-primary/10 shadow-sm hover:shadow-xl transition-all duration-500 group relative overflow-hidden`}
+                            className={`${area.bgColor} p-10 rounded-[2.5rem] border-2 border-secondary transition-all duration-500 group relative overflow-hidden`}
                         >
-                            <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
-                                {React.cloneElement(area.icon, { className: "w-32 h-32" })}
+                            <div className="absolute top-0 right-0 p-8 text-primary">
+                                {React.cloneElement(area.icon, { className: "w-32 h-32 text-primary" })}
                             </div>
                             <div className="relative z-10">
-                                <div className="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center mb-8 border border-primary/5 group-hover:bg-secondary group-hover:text-white transition-colors">
-                                    {area.icon}
+                                <div className="w-16 h-16 bg-white border-2 border-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-secondary group-hover:border-white group-hover:text-white transition-colors">
+                                    {React.cloneElement(area.icon, { className: "w-8 h-8 group-hover:text-white" })}
                                 </div>
                                 <h3 className="text-2xl font-black text-primary mb-6 group-hover:text-secondary transition-colors uppercase tracking-tight">
                                     {area.title}
@@ -91,9 +91,9 @@ const Projects = () => {
             <Section bg="white" className="!py-24">
                 <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-16">
                     <div className="w-full lg:w-1/2">
-                        <div className="relative aspect-video rounded-3xl bg-primary overflow-hidden flex items-center justify-center shadow-2xl border-4 border-white">
-                            <Globe size={100} className="text-white opacity-20 animate-pulse" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent p-10 flex flex-col justify-end">
+                        <div className="relative aspect-video rounded-3xl bg-primary border-4 border-secondary overflow-hidden flex items-center justify-center">
+                            <Globe size={100} className="text-white" />
+                            <div className="absolute inset-0 bg-primary p-10 flex flex-col justify-end border-t border-secondary">
                                 <span className="text-secondary font-black text-xs tracking-[.3em] uppercase mb-2">Regional Impact</span>
                                 <h3 className="text-3xl font-bold text-white uppercase tracking-tighter">Strategic Execution Excellence</h3>
                             </div>
@@ -124,7 +124,7 @@ const Projects = () => {
             {/* Final CTA */}
             <Section bg="primary" className="text-center !py-16">
                 <h3 className="text-3xl md:text-4xl font-black text-white mb-8 tracking-tighter">LEVERAGE OUR EXPERIENCE</h3>
-                <button className="px-12 py-5 bg-secondary text-primary font-black rounded-xl hover:bg-white transition-all transform hover:scale-105 shadow-2xl">
+                <button className="px-12 py-5 bg-secondary text-white font-black rounded-xl border border-white hover:bg-white hover:text-primary transition-all transform hover:scale-105">
                     PARTNER WITH US
                 </button>
             </Section>

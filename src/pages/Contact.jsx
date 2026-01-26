@@ -30,7 +30,7 @@ const Contact = () => {
         <div className="overflow-hidden">
             {/* --- Page Header --- */}
             <Section bg="primary" className="!py-24 relative overflow-hidden">
-                <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-1 bg-secondary" />
                 <div className="relative z-10 text-center max-w-3xl mx-auto">
                     <h1 className="text-5xl md:text-7xl font-black text-white mb-6 uppercase tracking-tighter">
                         Contact <span className="text-secondary">Us</span>
@@ -47,32 +47,32 @@ const Contact = () => {
                 <div className="max-w-5xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {contactInfo.map((info, index) => (
-                            <div key={index} className="flex items-center p-8 bg-white rounded-2xl border border-primary/10 transition-all duration-300 hover:shadow-lg hover:bg-primary/5 group">
-                                <div className="w-14 h-14 rounded-xl bg-primary/5 flex items-center justify-center mr-6 group-hover:bg-secondary group-hover:text-white transition-all duration-300">
-                                    {info.icon}
+                            <div key={index} className="flex items-center p-8 bg-white rounded-2xl border-2 border-secondary transition-all duration-300 hover:bg-secondary group">
+                                <div className="w-14 h-14 rounded-xl bg-white border border-primary flex items-center justify-center mr-6 group-hover:bg-white transition-all duration-300">
+                                    {React.cloneElement(info.icon, { className: "w-6 h-6 text-secondary group-hover:text-primary" })}
                                 </div>
                                 <div>
-                                    <p className="text-xs font-bold text-secondary uppercase tracking-[.2em] mb-1">{info.title}</p>
-                                    <p className="text-lg font-bold text-primary">{info.value}</p>
+                                    <p className="text-xs font-bold text-secondary uppercase tracking-[.2em] mb-1 group-hover:text-white">{info.title}</p>
+                                    <p className="text-lg font-bold text-primary group-hover:text-white">{info.value}</p>
                                 </div>
                             </div>
                         ))}
                     </div>
 
                     {/* --- CTA Section --- */}
-                    <div className="mt-20 text-center bg-primary rounded-[2.5rem] p-12 md:p-20 shadow-2xl relative overflow-hidden">
-                        <div className="absolute top-0 right-0 p-10 text-white/10">
-                            <Send size={150} />
+                    <div className="mt-20 text-center bg-primary rounded-[2.5rem] p-12 md:p-20 border-2 border-secondary relative overflow-hidden">
+                        <div className="absolute top-0 right-0 p-10 text-white">
+                            <Send size={150} className="text-white" />
                         </div>
                         <div className="relative z-10">
                             <h2 className="text-3xl md:text-4xl font-black text-white mb-4">Start a Conversation</h2>
-                            <p className="text-white mb-10 text-lg">We are ready to partner with you for strategic growth and impact.</p>
+                            <p className="text-white mb-10 text-lg font-medium">We are ready to partner with you for strategic growth and impact.</p>
                             <a
                                 href="mailto:epipyltd@gmail.com"
-                                className="inline-flex items-center space-x-3 px-12 py-5 bg-secondary text-primary-dark font-black rounded-xl hover:bg-white transition-all transform hover:scale-105 shadow-xl"
+                                className="inline-flex items-center space-x-3 px-12 py-5 bg-secondary text-white font-black rounded-xl border border-white hover:bg-white hover:text-primary transition-all transform hover:scale-105"
                             >
                                 <span>WORK WITH EPIPY</span>
-                                <Send size={20} />
+                                <Send size={20} className="text-white" />
                             </a>
                         </div>
                     </div>
@@ -80,10 +80,10 @@ const Contact = () => {
             </Section>
 
             {/* Simple Map Placeholder */}
-            <div className="w-full h-64 bg-gray-100 flex items-center justify-center border-t border-gray-200 grayscale opacity-40">
+            <div className="w-full h-64 bg-white flex items-center justify-center border-t border-secondary">
                 <div className="text-center">
-                    <MapPin className="w-10 h-10 text-primary/30 mx-auto mb-2" />
-                    <p className="text-primary/30 font-bold uppercase tracking-widest text-xs">Wuse Zone 4, Abuja</p>
+                    <MapPin className="w-10 h-10 text-primary mx-auto mb-2" />
+                    <p className="text-primary font-black uppercase tracking-widest text-xs">Suite 205B, Wuse Zone 4, Abuja, Nigeria</p>
                 </div>
             </div>
         </div>

@@ -5,12 +5,14 @@ export default {
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
+        colors: {
+            primary: "#001844",
+            secondary: "#A285D1",
+            white: "#FFFFFF",
+            transparent: 'transparent',
+            current: 'currentColor',
+        },
         extend: {
-            colors: {
-                primary: "#001844",
-                secondary: "#A285D1",
-                white: "#FFFFFF"
-            },
             keyframes: {
                 scroll: {
                     '0%': { transform: 'translateX(0)' },
@@ -26,4 +28,8 @@ export default {
         },
     },
     plugins: [],
+    corePlugins: {
+        // Disable default color utilities to prevent gray/slate/neutral usage
+        preflight: true,
+    },
 }

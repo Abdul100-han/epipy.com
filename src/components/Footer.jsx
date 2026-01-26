@@ -28,7 +28,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-primary-dark text-white pt-20 pb-10">
+        <footer className="bg-primary text-white pt-20 pb-10 border-t border-secondary">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand Section */}
@@ -41,15 +41,15 @@ const Footer = () => {
                             />
                             {/* <p className="text-secondary text-[10px] font-bold uppercase tracking-widest mt-1">Limited</p> */}
                         </div>
-                        <p className="text-white text-sm leading-relaxed mb-8 pr-4 opacity-80">
+                        <p className="text-white text-sm leading-relaxed mb-8 pr-4">
                             “Driving Growth Through Strategy, Systems & Execution.” A leading provider of engineering, consultancy, and technical training solutions in Nigeria.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
-                                <Linkedin size={18} />
+                            <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300">
+                                <Linkedin size={18} className="text-white" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
-                                <Twitter size={18} />
+                            <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300">
+                                <Twitter size={18} className="text-white" />
                             </a>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ const Footer = () => {
                     {/* Links Sections */}
                     {sections.map((section) => (
                         <div key={section.title}>
-                            <h4 className="text-lg font-bold mb-8 border-b border-secondary/30 pb-2 inline-block">
+                            <h4 className="text-lg font-bold mb-8 border-b border-secondary pb-2 inline-block">
                                 {section.title}
                             </h4>
                             <ul className="space-y-4">
@@ -67,7 +67,7 @@ const Footer = () => {
                                             to={link.path}
                                             className="text-white hover:text-secondary flex items-center group transition-colors text-sm"
                                         >
-                                            <ArrowUpRight size={14} className="mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                                            <ArrowUpRight size={14} className="mr-2 text-white -translate-x-2 group-hover:text-secondary group-hover:translate-x-0 transition-all" />
                                             {link.name}
                                         </Link>
                                     </li>
@@ -78,7 +78,7 @@ const Footer = () => {
 
                     {/* Contact Section */}
                     <div>
-                        <h4 className="text-lg font-bold mb-8 border-b border-secondary/30 pb-2 inline-block">
+                        <h4 className="text-lg font-bold mb-8 border-b border-secondary pb-2 inline-block">
                             Contact Info
                         </h4>
                         <ul className="space-y-5 text-sm text-white">
@@ -98,7 +98,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center text-white text-[10px] tracking-wider uppercase opacity-50 gap-4">
+                <div className="border-t border-secondary pt-10 flex flex-col md:flex-row justify-between items-center text-white text-[10px] tracking-wider uppercase gap-4">
                     <p>© {currentYear} Epipy Limited. All rights reserved.</p>
                     <div className="flex space-x-6">
                         <a href="#" className="hover:text-secondary transition-colors">Privacy Policy</a>

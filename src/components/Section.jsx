@@ -4,13 +4,12 @@ const Section = ({
     children,
     className = "",
     id = "",
-    bg = "white", // white, gray, primary, accent
+    bg = "white", // white, primary
     noPadding = false
 }) => {
     const bgStyles = {
         white: "bg-white text-primary",
-        primary: "bg-primary text-white",
-        dark: "bg-primary text-white"
+        primary: "bg-primary text-white"
     };
 
     return (

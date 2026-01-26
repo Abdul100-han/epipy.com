@@ -8,12 +8,14 @@ import Team from './pages/Team';
 import Projects from './pages/Projects';
 import Training from './pages/Training';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 // Note: Using HashRouter for seamless GitHub Pages deployment (refreshes work without server config)
 
 const App = () => {
     return (
         <Router>
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<Home />} />

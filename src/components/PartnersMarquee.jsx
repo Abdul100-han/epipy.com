@@ -14,9 +14,9 @@ const PartnersMarquee = () => {
     const extendedLogos = [...logos, ...logos];
 
     return (
-        <div className="w-full bg-white py-12 overflow-hidden border-y border-primary/10">
+        <div className="w-full bg-white py-12 overflow-hidden border-y border-primary">
             <div className="max-w-7xl mx-auto px-4 mb-8">
-                <h2 className="text-xl font-bold text-primary tracking-[.3em] uppercase text-center opacity-80">
+                <h2 className="text-xl font-bold text-primary tracking-[.3em] uppercase text-center">
                     Strategic Partners & Collaborations
                 </h2>
             </div>
@@ -26,7 +26,7 @@ const PartnersMarquee = () => {
                     {extendedLogos.map((logo, index) => (
                         <div
                             key={index}
-                            className="inline-flex items-center justify-center w-[250px] px-10 grayscale hover:grayscale-0 transition-all duration-500 cursor-default opacity-60 hover:opacity-100"
+                            className="inline-flex items-center justify-center w-[250px] px-10 cursor-default"
                         >
                             <img
                                 src={logo}
@@ -42,7 +42,7 @@ const PartnersMarquee = () => {
                     {extendedLogos.map((logo, index) => (
                         <div
                             key={`clone-${index}`}
-                            className="inline-flex items-center justify-center w-[250px] px-10 grayscale opacity-60"
+                            className="inline-flex items-center justify-center w-[250px] px-10"
                         >
                             <img
                                 src={logo}

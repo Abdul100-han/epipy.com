@@ -50,7 +50,7 @@ const Training = () => {
         <div className="overflow-hidden">
             {/* --- Page Header --- */}
             <Section bg="primary" className="!py-24 relative overflow-hidden">
-                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent" />
+                <div className="absolute inset-x-0 top-0 h-1 bg-secondary" />
                 <div className="relative z-10 text-center max-w-3xl mx-auto">
                     <h1 className="text-5xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter">
                         Training & <span className="text-secondary">Programs</span>
@@ -66,9 +66,9 @@ const Training = () => {
             <Section bg="white" className="!py-28">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {corePrograms.map((program, index) => (
-                        <div key={index} className="flex flex-col bg-gray-50 p-8 rounded-[2rem] border border-gray-100 hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group">
-                            <div className="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-8 group-hover:bg-secondary group-hover:text-white transition-colors duration-500">
-                                {program.icon}
+                        <div key={index} className="flex flex-col bg-white p-8 rounded-[2rem] border border-secondary transition-all duration-500 group">
+                            <div className="w-16 h-16 rounded-2xl bg-secondary flex items-center justify-center mb-8 transition-colors duration-500">
+                                {React.cloneElement(program.icon, { className: "w-8 h-8 text-white" })}
                             </div>
                             <h3 className="text-2xl font-black text-primary mb-4 group-hover:text-secondary transition-colors uppercase tracking-tight">
                                 {program.title}
@@ -77,7 +77,7 @@ const Training = () => {
                                 {program.description}
                             </p>
 
-                            <div className="space-y-3 mt-auto pt-6 border-t border-gray-100">
+                            <div className="space-y-3 mt-auto pt-6 border-t border-secondary">
                                 {program.offerings.map((item, i) => (
                                     <div key={i} className="flex items-start space-x-3 text-sm text-primary font-medium">
                                         <Check className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
@@ -91,34 +91,34 @@ const Training = () => {
             </Section>
 
             {/* --- Custom Training Solutions Section --- */}
-            <Section bg="primary-dark" className="relative group overflow-hidden">
+            <Section bg="primary" className="relative group overflow-hidden">
                 {/* Decorative Elements */}
-                <div className="absolute top-0 right-0 p-10 opacity-5">
-                    <Layout size={300} className="text-white" />
+                <div className="absolute top-0 right-0 p-10">
+                    <Layout size={300} className="text-secondary" />
                 </div>
 
                 <div className="relative z-10 flex flex-col lg:flex-row items-center gap-16">
                     <div className="w-full lg:w-3/5">
-                        <div className="inline-block px-4 py-1.5 bg-secondary/20 border border-secondary/30 rounded-lg text-secondary font-black text-xs uppercase tracking-[0.3em] mb-6">
+                        <div className="inline-block px-4 py-1.5 bg-secondary border border-white rounded-lg text-white font-black text-xs uppercase tracking-[0.3em] mb-6">
                             Tailored Excellence
                         </div>
                         <h2 className="text-4xl md:text-5xl font-black text-white mb-8 tracking-tighter uppercase leading-tight">
                             Custom Training <br className="hidden md:block" /> Solutions
                         </h2>
-                        <p className="text-xl text-gray-400 mb-10 leading-relaxed max-w-xl">
+                        <p className="text-xl text-white mb-10 leading-relaxed max-w-xl font-medium">
                             We design needs-based curricula that align perfectly with your organizational goals, whether delivered on-site at your headquarters or through immersive virtual platforms.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-4">
-                            <div className="flex items-center space-x-4 bg-white/5 p-4 rounded-2xl border border-white/10">
-                                <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
-                                    <Home className="w-6 h-6 text-secondary" />
+                            <div className="flex items-center space-x-4 bg-primary p-4 rounded-2xl border border-secondary">
+                                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
+                                    <Home className="w-6 h-6 text-white" />
                                 </div>
                                 <span className="text-white font-bold">On-Site Delivery</span>
                             </div>
-                            <div className="flex items-center space-x-4 bg-white/5 p-4 rounded-2xl border border-white/10">
-                                <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
-                                    <Monitor className="w-6 h-6 text-secondary" />
+                            <div className="flex items-center space-x-4 bg-primary p-4 rounded-2xl border border-secondary">
+                                <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
+                                    <Monitor className="w-6 h-6 text-white" />
                                 </div>
                                 <span className="text-white font-bold">Virtual Platform</span>
                             </div>
@@ -126,7 +126,7 @@ const Training = () => {
                     </div>
 
                     <div className="w-full lg:w-2/5">
-                        <div className="p-8 md:p-12 bg-white rounded-[2.5rem] shadow-2xl relative">
+                        <div className="p-8 md:p-12 bg-white rounded-[2.5rem] border-4 border-secondary relative">
                             <h4 className="text-2xl font-black text-primary mb-6 uppercase tracking-tight">Our Process</h4>
                             <ul className="space-y-6">
                                 {[
@@ -154,10 +154,10 @@ const Training = () => {
                     <h2 className="text-3xl md:text-4xl font-black text-primary mb-10 tracking-tighter uppercase">Ready to Empower Your Team?</h2>
                     <Link
                         to="/contact"
-                        className="inline-flex items-center space-x-3 px-12 py-5 bg-secondary text-primary-dark font-black rounded-xl hover:bg-primary hover:text-white transition-all transform hover:scale-105 shadow-2xl"
+                        className="inline-flex items-center space-x-3 px-12 py-5 bg-secondary text-white font-black rounded-xl hover:bg-white hover:text-primary border border-white transition-all transform hover:scale-105"
                     >
                         <span>REQUEST A TRAINING PROGRAM</span>
-                        <ArrowUpRight size={24} />
+                        <ArrowUpRight size={24} className="text-white" />
                     </Link>
                 </div>
             </Section>
