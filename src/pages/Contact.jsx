@@ -22,7 +22,7 @@ const Contact = () => {
         {
             icon: <Phone className="w-6 h-6 text-secondary" />,
             title: "Phone",
-            value: "+234 XXX XXX XXXX"
+            value: "+234 806 151 3531"
         }
     ];
 
