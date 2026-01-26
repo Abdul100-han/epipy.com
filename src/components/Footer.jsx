@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Linkedin, Twitter, ArrowUpRight } from 'lucide-react';
+import logo from '../assets/epipy.jpeg';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -33,19 +34,21 @@ const Footer = () => {
                     {/* Brand Section */}
                     <div className="col-span-1 lg:col-span-1">
                         <div className="mb-6">
-                            <span className="text-white font-extrabold text-2xl tracking-tighter italic">
-                                EPIPY <span className="text-secondary">NIGERIA</span>
-                            </span>
+                            <img
+                                src={logo}
+                                alt="Epipy Nigeria Limited"
+                                className="h-16 w-auto object-contain rounded bg-white p-1 mb-2"
+                            />
                             <p className="text-secondary text-[10px] font-bold uppercase tracking-widest mt-1">Limited</p>
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed mb-8 pr-4">
                             “Driving Growth Through Strategy, Systems & Execution.” A leading provider of engineering, consultancy, and technical training solutions in Nigeria.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300">
+                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
                                 <Linkedin size={18} />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300">
+                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary hover:text-primary transition-all duration-300">
                                 <Twitter size={18} />
                             </a>
                         </div>
