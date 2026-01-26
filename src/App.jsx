@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './layout/MainLayout';
 import Home from './pages/Home';
+import About from './pages/About';
 
 // Placeholder Pages
-const About = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">About Us</h1></div>;
 const Services = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Our Services</h1></div>;
 const Sectors = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Business Sectors</h1></div>;
 const Team = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Our Team</h1></div>;
