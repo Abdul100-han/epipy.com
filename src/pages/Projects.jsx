@@ -49,7 +49,7 @@ const Projects = () => {
                         Our <span className="text-secondary">Experience</span>
                     </h1>
                     <div className="w-20 h-1.5 bg-secondary mx-auto mb-8 rounded-full" />
-                    <p className="text-xl md:text-2xl text-gray-200 font-medium leading-relaxed italic">
+                    <p className="text-xl md:text-2xl text-white/80 font-medium leading-relaxed italic">
                         "A snapshot of the work we’ve delivered across sectors and ecosystems."
                     </p>
                 </div>
@@ -73,7 +73,7 @@ const Projects = () => {
                                 <h3 className="text-2xl font-black text-primary mb-6 group-hover:text-secondary transition-colors uppercase tracking-tight">
                                     {area.title}
                                 </h3>
-                                <p className="text-accent-dark/70 text-lg leading-relaxed mb-8">
+                                <p className="text-primary/70 text-lg leading-relaxed mb-8">
                                     {area.description}
                                 </p>
                                 <div className="flex items-center space-x-2 text-secondary font-bold text-sm tracking-widest uppercase">
@@ -100,7 +100,7 @@ const Projects = () => {
                     </div>
                     <div className="w-full lg:w-1/2">
                         <h2 className="text-4xl font-extrabold text-primary mb-8 tracking-tighter uppercase">Beyond Delivery</h2>
-                        <p className="text-lg text-accent-dark/80 mb-8 leading-relaxed">
+                        <p className="text-lg text-primary/80 mb-8 leading-relaxed">
                             Our experience spans diverse high-growth sectors where we combine strategic thinking with hands-on operational support. We don't just plan—we implement and monitor to ensure every project meets its intended impact.
                         </p>
                         <ul className="space-y-4">
@@ -128,7 +128,7 @@ const Projects = () => {
                     {clients.map((client, index) => (
                         <div key={index} className="flex items-center justify-center p-8 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all duration-500 hover:scale-110 cursor-default">
                             <div className="text-3xl font-black tracking-tighter text-gray-500 uppercase flex items-center">
-                                <span className="text-accent-dark">{client}</span>
+                                <span className="text-primary/70">{client}</span>
                                 <span className="text-secondary ml-1 mt-1 font-bold text-sm">.</span>
                             </div>
                         </div>

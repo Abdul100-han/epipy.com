@@ -78,7 +78,7 @@ const Home = () => {
                             Driving Growth Through <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Strategy, Systems & Execution</span>
                         </h1>
-                        <p className="text-lg text-accent-dark/80 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        <p className="text-lg text-primary/80 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                             Epipy Nigeria Limited helps organizations design winning strategies, build efficient systems, and execute high-impact projects across business, technology, agriculture, and innovation ecosystems.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
@@ -121,8 +121,8 @@ const Home = () => {
                         {/* Floating Stat Card */}
                         <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 animate-slide-down">
                             <div className="flex items-center space-x-4">
-                                <div className="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center">
-                                    <CheckCircle2 size={24} className="text-green-600" />
+                                <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                                    <CheckCircle2 size={24} className="text-secondary" />
                                 </div>
                                 <div>
                                     <p className="text-2xl font-bold text-primary">100%</p>
@@ -140,7 +140,7 @@ const Home = () => {
                     <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 text-center relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-2 h-full bg-secondary" />
                         <h2 className="text-3xl font-bold mb-6">Sustainable Growth for Every Enterprise</h2>
-                        <p className="text-lg text-accent-dark/70 leading-relaxed italic">
+                        <p className="text-lg text-primary/70 leading-relaxed italic">
                             "Epipy Nigeria Limited is a business development and project execution company supporting startups, SMEs, corporates, and institutions to grow sustainably. We combine strategy, operations, innovation, and partnerships to deliver measurable results."
                         </p>
                     </div>
@@ -163,7 +163,7 @@ const Home = () => {
                                 {service.icon}
                             </div>
                             <h3 className="text-xl font-bold mb-4 group-hover:text-primary transition-colors">{service.title}</h3>
-                            <p className="text-accent-dark/60 text-sm leading-relaxed">{service.description}</p>
+                            <p className="text-primary/60 text-sm leading-relaxed">{service.description}</p>
                         </div>
                     ))}
                 </div>
@@ -175,7 +175,7 @@ const Home = () => {
                 <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
                         <h2 className="text-4xl font-extrabold text-white mb-8">Why Strategic Partners <span className="text-secondary">Choose Us</span></h2>
-                        <p className="text-gray-400 mb-10 text-lg">We don't just advise; we execute. Our approach is built on a deep understanding of the Nigerian business landscape and global best practices.</p>
+                        <p className="text-white/60 mb-10 text-lg">We don't just advise; we execute. Our approach is built on a deep understanding of the Nigerian business landscape and global best practices.</p>
 
                         <div className="space-y-6">
                             {[
@@ -210,7 +210,7 @@ const Home = () => {
             <Section bg="white">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold mb-4">Sectors We Empower</h2>
-                    <p className="text-accent max-w-2xl mx-auto">Providing specialized support across diverse high-growth sectors in the regional economy.</p>
+                    <p className="text-primary/60 max-w-2xl mx-auto">Providing specialized support across diverse high-growth sectors in the regional economy.</p>
                 </div>
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
                     {sectors.map((sector, idx) => (

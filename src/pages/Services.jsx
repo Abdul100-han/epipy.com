@@ -102,7 +102,7 @@ const Services = () => {
                         Our <span className="text-secondary">Services</span>
                     </h1>
                     <div className="w-24 h-2 bg-secondary mx-auto mb-10 rounded-full" />
-                    <p className="text-xl md:text-2xl text-gray-200 font-medium leading-relaxed">
+                    <p className="text-xl md:text-2xl text-white/80 font-medium leading-relaxed">
                         Practical solutions designed to help organizations grow, operate efficiently, and deliver impact across diverse sectors.
                     </p>
                 </div>
@@ -132,7 +132,7 @@ const Services = () => {
                     </div>
                     <div className="relative z-10 max-w-2xl mx-auto">
                         <h2 className="text-3xl md:text-5xl font-black text-white mb-8">Ready to transform your operations?</h2>
-                        <p className="text-gray-400 mb-12 text-lg">Our team of experts is ready to help you implement strategic systems that drive results.</p>
+                        <p className="text-white/60 mb-12 text-lg">Our team of experts is ready to help you implement strategic systems that drive results.</p>
                         <div className="flex flex-col sm:flex-row justify-center gap-6">
                             <button className="px-12 py-5 bg-secondary text-primary-dark font-black rounded-full hover:bg-white transition-all transform hover:scale-105 shadow-xl">
                                 SCHEDULE A CONSULTATION

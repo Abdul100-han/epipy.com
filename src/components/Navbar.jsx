@@ -27,7 +27,7 @@ const Navbar = () => {
     ];
 
     const activeStyle = "text-secondary font-bold border-b-2 border-secondary pb-1";
-    const baseStyle = "text-accent-dark hover:text-secondary font-medium transition-all duration-300";
+    const baseStyle = "text-primary/70 hover:text-secondary font-medium transition-all duration-300";
 
     return (
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg py-1' : 'bg-white/95 backdrop-blur-md py-3'}`}>
@@ -84,7 +84,7 @@ const Navbar = () => {
                             key={link.name}
                             to={link.path}
                             className={({ isActive }) =>
-                                `block px-4 py-3 text-lg font-semibold rounded-lg transition-colors ${isActive ? 'bg-secondary/10 text-secondary' : 'text-accent-dark hover:bg-gray-50 hover:text-secondary'}`
+                                `block px-4 py-3 text-lg font-semibold rounded-lg transition-colors ${isActive ? 'bg-secondary/10 text-secondary' : 'text-primary/70 hover:bg-gray-50 hover:text-secondary'}`
                             }
                             onClick={() => setIsOpen(false)}
                         >

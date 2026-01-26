@@ -41,7 +41,7 @@ const Footer = () => {
                             />
                             <p className="text-secondary text-[10px] font-bold uppercase tracking-widest mt-1">Limited</p>
                         </div>
-                        <p className="text-gray-400 text-sm leading-relaxed mb-8 pr-4">
+                        <p className="text-white/70 text-sm leading-relaxed mb-8 pr-4">
                             “Driving Growth Through Strategy, Systems & Execution.” A leading provider of engineering, consultancy, and technical training solutions in Nigeria.
                         </p>
                         <div className="flex space-x-4">
@@ -65,7 +65,7 @@ const Footer = () => {
                                     <li key={link.name}>
                                         <Link
                                             to={link.path}
-                                            className="text-gray-400 hover:text-secondary flex items-center group transition-colors text-sm"
+                                            className="text-white/70 hover:text-secondary flex items-center group transition-colors text-sm"
                                         >
                                             <ArrowUpRight size={14} className="mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                                             {link.name}
@@ -81,10 +81,10 @@ const Footer = () => {
                         <h4 className="text-lg font-bold mb-8 border-b border-secondary/30 pb-2 inline-block">
                             Contact Info
                         </h4>
-                        <ul className="space-y-5 text-sm text-gray-400">
+                        <ul className="space-y-5 text-sm text-white/70">
                             <li className="flex items-start">
                                 <MapPin size={20} className="text-secondary mr-3 mt-0.5 flex-shrink-0" />
-                                <span>High-rise Office complex, Victoria Island, Lagos, Nigeria.</span>
+                                <span>Suite 205B, Wuse Zone 4, Abuja, Nigeria.</span>
                             </li>
                             <li className="flex items-center">
                                 <Phone size={20} className="text-secondary mr-3 flex-shrink-0" />
@@ -98,7 +98,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs gap-4">
+                <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center text-white/50 text-xs gap-4">
                     <p>© {currentYear} Epipy Nigeria Limited. All rights reserved.</p>
                     <div className="flex space-x-6">
                         <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

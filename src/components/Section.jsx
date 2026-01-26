@@ -11,7 +11,7 @@ const Section = ({
         white: "bg-white",
         gray: "bg-gray-50",
         primary: "bg-primary text-white",
-        accent: "bg-accent-light text-accent-dark",
+        accent: "bg-accent-light text-primary",
         dark: "bg-primary-dark text-white"
     };
 

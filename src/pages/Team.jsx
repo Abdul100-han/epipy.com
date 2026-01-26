@@ -44,7 +44,7 @@ const Team = () => {
                         Our <span className="text-secondary text-stroke-white">Team</span>
                     </h1>
                     <div className="w-20 h-1.5 bg-secondary mx-auto mb-8 rounded-full" />
-                    <p className="text-xl md:text-2xl text-gray-200 font-medium leading-relaxed">
+                    <p className="text-xl md:text-2xl text-white/80 font-medium leading-relaxed">
                         A multidisciplinary team driving strategy, execution, and impact.
                     </p>
                 </div>
@@ -78,7 +78,7 @@ const Team = () => {
                                 <p className="text-secondary text-sm font-bold uppercase tracking-widest bg-secondary/5 inline-block px-3 py-1 rounded-full">
                                     {member.role}
                                 </p>
-                                <p className="text-accent-dark/70 text-sm leading-relaxed max-w-[250px] mx-auto mt-4 px-2 italic">
+                                <p className="text-primary/70 text-sm leading-relaxed max-w-[250px] mx-auto mt-4 px-2 italic">
                                     "{member.bio}"
                                 </p>
                             </div>
