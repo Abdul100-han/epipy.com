@@ -9,7 +9,7 @@ import Projects from './pages/Projects'; // Actual Projects component
 
 // Placeholder Pages
 const Sectors = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Business Sectors</h1></div>;
-const Training = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Training & Development</h1></div>;
+import Training from './pages/Training';
 const Contact = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Contact Us</h1></div>;
 
 const App = () => {
