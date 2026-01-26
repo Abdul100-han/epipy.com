@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './layout/MainLayout';
 import Home from './pages/Home';
 import About from './pages/About';
+import Services from './pages/Services';
 
 // Placeholder Pages
-const Services = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Our Services</h1></div>;
 const Sectors = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Business Sectors</h1></div>;
 const Team = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Our Team</h1></div>;
 const Projects = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Portfolio</h1></div>;
