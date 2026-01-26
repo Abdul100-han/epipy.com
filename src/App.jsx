@@ -5,10 +5,10 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Team from './pages/Team';
+import Projects from './pages/Projects'; // Actual Projects component
 
 // Placeholder Pages
 const Sectors = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Business Sectors</h1></div>;
-const Projects = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Portfolio</h1></div>;
 const Training = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Training & Development</h1></div>;
 const Contact = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Contact Us</h1></div>;
 
