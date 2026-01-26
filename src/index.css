@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-primary/80 bg-white font-sans scroll-smooth;
+    @apply text-primary bg-white font-sans scroll-smooth;
   }
 
   h1,

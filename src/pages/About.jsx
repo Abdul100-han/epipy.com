@@ -54,7 +54,7 @@ const About = () => {
                         About <span className="text-secondary">Epipy</span>
                     </h1>
                     <div className="w-24 h-1.5 bg-secondary mx-auto mb-8 rounded-full" />
-                    <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto font-medium leading-relaxed">
+                    <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto font-medium leading-relaxed">
                         Building practical strategies and executing solutions that drive sustainable growth.
                     </p>
                 </div>
@@ -71,9 +71,9 @@ const About = () => {
                             A Forward-Driven Business Development <br className="hidden md:block" />
                             And Project Execution Company.
                         </h2>
-                        <div className="space-y-6 text-lg text-primary/70 leading-relaxed">
+                        <div className="space-y-6 text-lg text-primary leading-relaxed">
                             <p>
-                                Epipy Nigeria Limited is focused on helping organizations structure operations, unlock opportunities, and implement solutions that deliver impact.
+                                Epipy Limited is focused on helping organizations structure operations, unlock opportunities, and implement solutions that deliver impact.
                             </p>
                             <p>
                                 We support businesses across strategy design, project execution, innovation adoption, agritech development, training, and systems improvement. Our approach combines deep local market insight with world-class execution standards.
@@ -133,11 +133,11 @@ const About = () => {
                             <Rocket size={200} />
                         </div>
                         <div className="relative z-10">
-                            <div className="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center mb-8">
+                            <div className="w-16 h-16 bg-primary-light rounded-2xl flex items-center justify-center mb-8">
                                 <Target className="w-8 h-8 text-primary" />
                             </div>
                             <h2 className="text-3xl font-black mb-6 text-primary uppercase tracking-tight">Mission</h2>
-                            <p className="text-xl text-primary/70 leading-relaxed font-medium">
+                            <p className="text-xl text-primary leading-relaxed font-medium">
                                 To empower organizations with practical strategies, efficient systems, and expert execution that drive sustainable growth and long-term success.
                             </p>
                         </div>
@@ -160,7 +160,7 @@ const About = () => {
                                     {val.icon}
                                 </div>
                                 <h3 className="text-xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">{val.title}</h3>
-                                <p className="text-primary/60 text-sm leading-relaxed">
+                                <p className="text-primary text-sm leading-relaxed">
                                     {val.description}
                                 </p>
                             </div>
@@ -184,7 +184,7 @@ const About = () => {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                     <div className="text-center md:text-left">
                         <h2 className="text-3xl font-bold text-white mb-2">Grow with Epipy Excellence</h2>
-                        <p className="text-white/60">Join the list of successful organizations we've empowered.</p>
+                        <p className="text-white">Join the list of successful organizations we've empowered.</p>
                     </div>
                     <button className="px-10 py-4 bg-secondary text-primary-dark font-black rounded-full hover:bg-white transition-all transform hover:scale-105">
                         CONTACT OUR STRATEGISTS

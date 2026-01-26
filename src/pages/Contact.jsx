@@ -7,7 +7,7 @@ const Contact = () => {
         {
             icon: <Building2 className="w-6 h-6 text-secondary" />,
             title: "Company Name",
-            value: "Epipy Nigeria Limited"
+            value: "Epipy Limited"
         },
         {
             icon: <MapPin className="w-6 h-6 text-secondary" />,
@@ -36,7 +36,7 @@ const Contact = () => {
                         Contact <span className="text-secondary">Us</span>
                     </h1>
                     <div className="w-20 h-1.5 bg-secondary mx-auto mb-8 rounded-full" />
-                    <p className="text-xl md:text-2xl text-white/80 font-medium leading-relaxed italic">
+                    <p className="text-xl md:text-2xl text-white font-medium leading-relaxed italic">
                         "Let’s discuss how we can support your organization."
                     </p>
                 </div>
@@ -47,7 +47,7 @@ const Contact = () => {
                 <div className="max-w-5xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {contactInfo.map((info, index) => (
-                            <div key={index} className="flex items-center p-8 bg-gray-50 rounded-2xl border border-gray-100 transition-all duration-300 hover:shadow-lg hover:bg-white group">
+                            <div key={index} className="flex items-center p-8 bg-white rounded-2xl border border-primary/10 transition-all duration-300 hover:shadow-lg hover:bg-primary/5 group">
                                 <div className="w-14 h-14 rounded-xl bg-primary/5 flex items-center justify-center mr-6 group-hover:bg-secondary group-hover:text-white transition-all duration-300">
                                     {info.icon}
                                 </div>
@@ -61,12 +61,12 @@ const Contact = () => {
 
                     {/* --- CTA Section --- */}
                     <div className="mt-20 text-center bg-primary rounded-[2.5rem] p-12 md:p-20 shadow-2xl relative overflow-hidden">
-                        <div className="absolute top-0 right-0 p-10 opacity-5">
-                            <Send size={150} className="text-white" />
+                        <div className="absolute top-0 right-0 p-10 text-white/10">
+                            <Send size={150} />
                         </div>
                         <div className="relative z-10">
                             <h2 className="text-3xl md:text-4xl font-black text-white mb-4">Start a Conversation</h2>
-                            <p className="text-white/60 mb-10 text-lg">We are ready to partner with you for strategic growth and impact.</p>
+                            <p className="text-white mb-10 text-lg">We are ready to partner with you for strategic growth and impact.</p>
                             <a
                                 href="mailto:epipyltd@gmail.com"
                                 className="inline-flex items-center space-x-3 px-12 py-5 bg-secondary text-primary-dark font-black rounded-xl hover:bg-white transition-all transform hover:scale-105 shadow-xl"

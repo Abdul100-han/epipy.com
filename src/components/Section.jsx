@@ -8,11 +8,9 @@ const Section = ({
     noPadding = false
 }) => {
     const bgStyles = {
-        white: "bg-white",
-        gray: "bg-gray-50",
+        white: "bg-white text-primary",
         primary: "bg-primary text-white",
-        accent: "bg-accent-light text-primary",
-        dark: "bg-primary-dark text-white"
+        dark: "bg-primary text-white"
     };
 
     return (

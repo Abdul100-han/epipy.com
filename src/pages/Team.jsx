@@ -44,8 +44,8 @@ const Team = () => {
                         Our <span className="text-secondary text-stroke-white">Team</span>
                     </h1>
                     <div className="w-20 h-1.5 bg-secondary mx-auto mb-8 rounded-full" />
-                    <p className="text-xl md:text-2xl text-white/80 font-medium leading-relaxed">
-                        A multidisciplinary team driving strategy, execution, and impact.
+                    <p className="text-xl md:text-2xl text-white font-medium leading-relaxed italic">
+                        "Practical learning experiences designed for individuals and organizations."
                     </p>
                 </div>
             </Section>
@@ -57,7 +57,7 @@ const Team = () => {
                         <div key={index} className="group flex flex-col items-center text-center">
                             {/* Profile Image Placeholder */}
                             <div className="relative mb-8">
-                                <div className="w-48 h-48 rounded-full bg-gray-50 border-2 border-gray-100 flex items-center justify-center p-2 transition-all duration-500 group-hover:border-secondary overflow-hidden shadow-lg group-hover:shadow-secondary/20">
+                                <div className="w-48 h-48 rounded-full bg-primary/5 border-2 border-primary/10 flex items-center justify-center p-2 transition-all duration-500 group-hover:border-secondary overflow-hidden shadow-lg group-hover:shadow-secondary/20">
                                     <div className="w-full h-full rounded-full bg-primary/5 flex items-center justify-center text-primary-dark group-hover:bg-secondary transition-all duration-500">
                                         <span className="text-4xl font-black group-hover:text-white group-hover:scale-110 transition-all duration-500">
                                             {member.initials}
@@ -65,7 +65,7 @@ const Team = () => {
                                     </div>
                                 </div>
                                 {/* Decorative badge */}
-                                <div className="absolute bottom-4 right-4 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center border border-gray-100 group-hover:bg-primary transition-colors duration-500">
+                                <div className="absolute bottom-4 right-4 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center border border-primary/10 group-hover:bg-primary transition-colors duration-500">
                                     <User size={20} className="text-secondary group-hover:text-white transition-colors duration-500" />
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ const Team = () => {
                                 <p className="text-secondary text-sm font-bold uppercase tracking-widest bg-secondary/5 inline-block px-3 py-1 rounded-full">
                                     {member.role}
                                 </p>
-                                <p className="text-primary/70 text-sm leading-relaxed max-w-[250px] mx-auto mt-4 px-2 italic">
+                                <p className="text-primary text-sm leading-relaxed max-w-[250px] mx-auto mt-4 px-2 italic">
                                     "{member.bio}"
                                 </p>
                             </div>

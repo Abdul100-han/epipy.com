@@ -56,7 +56,7 @@ const Training = () => {
                         Training & <span className="text-secondary">Programs</span>
                     </h1>
                     <div className="w-20 h-1.5 bg-secondary mx-auto mb-8 rounded-full" />
-                    <p className="text-xl md:text-2xl text-white/80 font-medium leading-relaxed italic">
+                    <p className="text-xl md:text-2xl text-white font-medium leading-relaxed italic">
                         "Practical learning experiences designed for individuals and organizations."
                     </p>
                 </div>
@@ -73,13 +73,13 @@ const Training = () => {
                             <h3 className="text-2xl font-black text-primary mb-4 group-hover:text-secondary transition-colors uppercase tracking-tight">
                                 {program.title}
                             </h3>
-                            <p className="text-primary/60 text-sm mb-8 leading-relaxed">
+                            <p className="text-primary text-sm mb-8 leading-relaxed">
                                 {program.description}
                             </p>
 
                             <div className="space-y-3 mt-auto pt-6 border-t border-gray-100">
                                 {program.offerings.map((item, i) => (
-                                    <div key={i} className="flex items-start space-x-3 text-sm text-primary/80 font-medium">
+                                    <div key={i} className="flex items-start space-x-3 text-sm text-primary font-medium">
                                         <Check className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
                                         <span>{item}</span>
                                     </div>
@@ -138,7 +138,7 @@ const Training = () => {
                                         <div className="text-secondary font-black text-lg">0{idx + 1}.</div>
                                         <div>
                                             <p className="text-primary font-bold">{step.t}</p>
-                                            <p className="text-primary/60 text-sm">{step.d}</p>
+                                            <p className="text-primary text-sm">{step.d}</p>
                                         </div>
                                     </li>
                                 ))}

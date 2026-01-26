@@ -36,12 +36,12 @@ const Footer = () => {
                         <div className="mb-6">
                             <img
                                 src={logo}
-                                alt="Epipy Nigeria Limited"
+                                alt="Epipy Limited"
                                 className="h-16 w-auto object-contain rounded bg-white p-1 mb-2"
                             />
-                            <p className="text-secondary text-[10px] font-bold uppercase tracking-widest mt-1">Limited</p>
+                            {/* <p className="text-secondary text-[10px] font-bold uppercase tracking-widest mt-1">Limited</p> */}
                         </div>
-                        <p className="text-white/70 text-sm leading-relaxed mb-8 pr-4">
+                        <p className="text-white text-sm leading-relaxed mb-8 pr-4 opacity-80">
                             “Driving Growth Through Strategy, Systems & Execution.” A leading provider of engineering, consultancy, and technical training solutions in Nigeria.
                         </p>
                         <div className="flex space-x-4">
@@ -65,7 +65,7 @@ const Footer = () => {
                                     <li key={link.name}>
                                         <Link
                                             to={link.path}
-                                            className="text-white/70 hover:text-secondary flex items-center group transition-colors text-sm"
+                                            className="text-white hover:text-secondary flex items-center group transition-colors text-sm"
                                         >
                                             <ArrowUpRight size={14} className="mr-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                                             {link.name}
@@ -81,7 +81,7 @@ const Footer = () => {
                         <h4 className="text-lg font-bold mb-8 border-b border-secondary/30 pb-2 inline-block">
                             Contact Info
                         </h4>
-                        <ul className="space-y-5 text-sm text-white/70">
+                        <ul className="space-y-5 text-sm text-white">
                             <li className="flex items-start">
                                 <MapPin size={20} className="text-secondary mr-3 mt-0.5 flex-shrink-0" />
                                 <span>Suite 205B, Wuse Zone 4, Abuja, Nigeria.</span>
@@ -98,11 +98,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center text-white/50 text-xs gap-4">
-                    <p>© {currentYear} Epipy Nigeria Limited. All rights reserved.</p>
+                <div className="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center text-white text-[10px] tracking-wider uppercase opacity-50 gap-4">
+                    <p>© {currentYear} Epipy Limited. All rights reserved.</p>
                     <div className="flex space-x-6">
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" className="hover:text-secondary transition-colors">Privacy Policy</a>
+                        <a href="#" className="hover:text-secondary transition-colors">Terms of Service</a>
                     </div>
                 </div>
             </div>

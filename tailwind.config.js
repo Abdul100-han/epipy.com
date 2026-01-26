@@ -7,21 +7,18 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: {
-                    light: '#0a327d',
-                    DEFAULT: '#001844',
-                    dark: '#000c22',
-                },
-                secondary: {
-                    light: '#c3b1e3',
-                    DEFAULT: '#A285D1',
-                    dark: '#8160b8',
-                },
-                accent: {
-                    light: '#f8fafc',
-                    DEFAULT: '#64748b',
-                    dark: '#1e293b',
+                primary: "#001844",
+                secondary: "#A285D1",
+                white: "#FFFFFF"
+            },
+            keyframes: {
+                scroll: {
+                    '0%': { transform: 'translateX(0)' },
+                    '100%': { transform: 'translateX(calc(-250px * 8))' },
                 }
+            },
+            animation: {
+                scroll: 'scroll 40s linear infinite',
             },
             fontFamily: {
                 sans: ['Inter', 'Poppins', 'sans-serif'],
