@@ -17,7 +17,7 @@ const Contact = () => {
         {
             icon: <Mail className="w-6 h-6 text-secondary" />,
             title: "Email",
-            value: "info@epipy.ng"
+            value: "epipyltd@gmail.com"
         },
         {
             icon: <Phone className="w-6 h-6 text-secondary" />,
@@ -68,7 +68,7 @@ const Contact = () => {
                             <h2 className="text-3xl md:text-4xl font-black text-white mb-4">Start a Conversation</h2>
                             <p className="text-gray-400 mb-10 text-lg">We are ready to partner with you for strategic growth and impact.</p>
                             <a
-                                href="mailto:info@epipy.ng"
+                                href="mailto:epipyltd@gmail.com"
                                 className="inline-flex items-center space-x-3 px-12 py-5 bg-secondary text-primary-dark font-black rounded-xl hover:bg-white transition-all transform hover:scale-105 shadow-xl"
                             >
                                 <span>WORK WITH EPIPY</span>
