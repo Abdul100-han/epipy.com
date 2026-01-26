@@ -1,15 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './layout/MainLayout';
+import Home from './pages/Home';
 
 // Placeholder Pages
-const Home = () => (
-    <div className="container mx-auto px-4 py-20">
-        <h1 className="text-4xl md:text-6xl mb-6">Innovative <span className="text-secondary">Solutions</span> for a Progressive Nigeria</h1>
-        <p className="text-xl text-accent max-w-2xl">Epipy Nigeria Limited provides world-class engineering, project management, and consulting services tailored for the African market.</p>
-    </div>
-);
-
 const About = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">About Us</h1></div>;
 const Services = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Our Services</h1></div>;
 const Sectors = () => <div className="container mx-auto px-4 py-20"><h1 className="text-4xl">Business Sectors</h1></div>;
