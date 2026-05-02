@@ -44,16 +44,16 @@ const Services = () => {
                 "Workflow automation support"
             ]
         },
-        {
-            title: "Marketing & Growth Support",
-            icon: <Megaphone />,
-            description: "Build a brand that resonates. We combine research and creative strategy to position your business for maximum market impact.",
-            offerings: [
-                "Brand strategy & positioning",
-                "Content & communication development",
-                "Market research & insights"
-            ]
-        },
+        // {
+        //     title: "Marketing & Growth Support",
+        //     icon: <Megaphone />,
+        //     description: "Build a brand that resonates. We combine research and creative strategy to position your business for maximum market impact.",
+        //     offerings: [
+        //         "Brand strategy & positioning",
+        //         "Content & communication development",
+        //         "Market research & insights"
+        //     ]
+        // },
         {
             title: "Agritech & Innovation",
             icon: <Sprout />,

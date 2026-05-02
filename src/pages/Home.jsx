@@ -30,11 +30,11 @@ const Home = () => {
             icon: <Cpu className="w-8 h-8 text-secondary" />,
             description: "Building efficient digital infrastructure for the modern age."
         },
-        {
-            title: "Marketing, Communications & Growth",
-            icon: <Megaphone className="w-8 h-8 text-secondary" />,
-            description: "Amplifying your voice and driving measurable market presence."
-        },
+        // {
+        //     title: "Marketing, Communications & Growth",
+        //     icon: <Megaphone className="w-8 h-8 text-secondary" />,
+        //     description: "Amplifying your voice and driving measurable market presence."
+        // },
         {
             title: "Agritech & Innovation Support",
             icon: <Sprout className="w-8 h-8 text-secondary" />,

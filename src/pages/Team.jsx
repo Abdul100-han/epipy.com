@@ -5,32 +5,39 @@ import mubarakAminu from '../assets/team/Mubarak Aminu.jpeg';
 import toheedOlaitan from '../assets/team/Aliyu Toheeb Olaitan.jpeg';
 import abdulsalamMuhammad from '../assets/team/Abdulsalam Muhammad.jpeg';
 import ummaMohammed from '../assets/team/Umma Mohammed Abdullahi.jpeg';
+import matthew from '../assets/team/marthew epipy.jpeg';
 
 const Team = () => {
     const teamMembers = [
         {
             name: "Mubarak Aminu",
             role: "Founder & Lead Strategist",
-            bio: "Focuses on business strategy, partnerships, and execution leadership across sectors.",
+            bio: "",
             image: mubarakAminu
         },
         {
+            name: "Muthew Copeland",
+            role: "Research & Development Lead",
+            bio: "",
+            image: matthew
+        },
+        {
             name: "Toheed Olaitan",
-            role: "Project & Research Lead",
-            bio: "Leads research, planning, and delivery of projects with data-driven insights.",
+            role: "Operations & Project Lead",
+            // bio: "Leads research, planning, and delivery of projects with data-driven insights.",
             image: toheedOlaitan
         },
-        
+
         {
             name: "Umma Mohammed Abdullahi",
-            role: "Partnerships & Stakeholder Relations Lead",
-            bio: "Manages partnerships, stakeholder engagement, and collaborative initiatives.",
+            role: "Partnerships & Growth Lead",
+            // bio: "Manages partnerships, stakeholder engagement, and collaborative initiatives.",
             image: ummaMohammed
         },
         {
             name: "Abdulsalam Muhammad",
             role: "Software Engineer & Technical Lead",
-            bio: "Designs and delivers scalable robust systems, turning business needs into reliable technical solutions.",
+            // bio: "Designs and delivers scalable robust systems, turning business needs into reliable technical solutions.",
             image: abdulsalamMuhammad
         }
     ];

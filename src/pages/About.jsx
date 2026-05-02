@@ -119,7 +119,7 @@ const About = () => {
                             </div>
                             <h2 className="text-3xl font-black mb-6 uppercase tracking-tight">Vision</h2>
                             <p className="text-xl text-white leading-relaxed font-medium">
-                                To become a trusted African partner for strategic growth, innovation, and execution excellence.
+                                To become a trusted partner for strategic growth, innovation, and execution excellence.
                             </p>
                         </div>
                     </div>
