@@ -12,13 +12,11 @@ const Team = () => {
         {
             name: "Mubarak Aminu",
             role: "Founder & Lead Strategist",
-            bio: "",
             image: mubarakAminu
         },
         {
             name: "Muthew Copeland",
             role: "Research & Development Lead",
-            bio: "",
             image: matthew
         },
         {
@@ -31,13 +29,11 @@ const Team = () => {
         {
             name: "Umma Mohammed Abdullahi",
             role: "Partnerships & Growth Lead",
-            // bio: "Manages partnerships, stakeholder engagement, and collaborative initiatives.",
-            image: ummaMohammed
+             image: ummaMohammed
         },
         {
             name: "Abdulsalam Muhammad",
             role: "Software Engineer & Technical Lead",
-            // bio: "Designs and delivers scalable robust systems, turning business needs into reliable technical solutions.",
             image: abdulsalamMuhammad
         }
     ];
@@ -64,7 +60,7 @@ const Team = () => {
 
             {/* --- Team Grid --- */}
             <Section bg="white" className="!py-28">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 sm:gap-10 lg:gap-12 xl:gap-8">
                     {teamMembers.map((member, index) => (
                         <div key={index} className="group flex flex-col items-center text-center">
                             {/* Profile Image */}
