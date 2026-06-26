@@ -117,7 +117,7 @@ const About = () => {
                             <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mb-8">
                                 <Rocket className="w-8 h-8 text-white" />
                             </div>
-                            <h2 className="text-3xl font-black mb-6 uppercase tracking-tight">Vision</h2>
+                            <h2 className="text-3xl font-black mb-6 uppercase tracking-tight text-white">Vision</h2>
                             <p className="text-xl text-white leading-relaxed font-medium">
                                 To become a trusted partner for strategic growth, innovation, and execution excellence.
                             </p>
@@ -180,9 +180,9 @@ const About = () => {
                         <h2 className="text-3xl font-bold text-white mb-2">Grow with Epipy Excellence</h2>
                         <p className="text-white">Join the list of successful organizations we've empowered.</p>
                     </div>
-                    <button className="px-10 py-4 bg-secondary text-white border border-white font-black rounded-full hover:bg-white hover:text-primary transition-all transform hover:scale-105">
+                    <a href="mailto:info@epipy.com" className="inline-block px-10 py-4 bg-secondary text-white border border-white font-black rounded-full hover:bg-white hover:text-primary transition-all transform hover:scale-105">
                         CONTACT OUR STRATEGISTS
-                    </button>
+                    </a>
                 </div>
             </Section>
         </div>

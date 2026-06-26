@@ -124,9 +124,9 @@ const Projects = () => {
             {/* Final CTA */}
             <Section bg="primary" className="text-center !py-16">
                 <h3 className="text-3xl md:text-4xl font-black text-white mb-8 tracking-tighter">LEVERAGE OUR EXPERIENCE</h3>
-                <button className="px-12 py-5 bg-secondary text-white font-black rounded-xl border border-white hover:bg-white hover:text-primary transition-all transform hover:scale-105">
+                <a href="mailto:info@epipy.com" className="inline-block text-center px-12 py-5 bg-secondary text-white font-black rounded-xl border border-white hover:bg-white hover:text-primary transition-all transform hover:scale-105">
                     PARTNER WITH US
-                </button>
+                </a>
             </Section>
         </div>
     );

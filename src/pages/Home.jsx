@@ -173,7 +173,7 @@ const Home = () => {
                 <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
                         <h2 className="text-4xl font-extrabold text-white mb-8">Why Strategic Partners <span className="text-secondary">Choose Us</span></h2>
-                        <p className="text-white mb-10 text-lg">We don't just advise; we execute. Our approach is built on a deep understanding of the Nigerian business landscape and global best practices.</p>
+                        <p className="text-white mb-10 text-lg">We don't just advise; we execute. Our approach is built on a deep understanding of business landscape and global best practices.</p>
 
                         <div className="space-y-6">
                             {[

@@ -131,9 +131,9 @@ const Services = () => {
                         <h2 className="text-3xl md:text-5xl font-black text-white mb-8">Ready to transform your operations?</h2>
                         <p className="text-white mb-12 text-lg font-medium">Our team of experts is ready to help you implement strategic systems that drive results.</p>
                         <div className="flex flex-col sm:flex-row justify-center gap-6">
-                            <button className="px-12 py-5 bg-secondary text-white font-black rounded-full border border-white hover:bg-white hover:text-primary transition-all transform hover:scale-105">
+                            <a href="mailto:info@epipy.com" className="inline-block text-center px-12 py-5 bg-secondary text-white font-black rounded-full border border-white hover:bg-white hover:text-primary transition-all transform hover:scale-105">
                                 SCHEDULE A CONSULTATION
-                            </button>
+                            </a>
                             <button className="px-12 py-5 bg-primary text-white font-bold rounded-full border border-white hover:bg-secondary transition-all">
                                 VIEW CASE STUDIES
                             </button>

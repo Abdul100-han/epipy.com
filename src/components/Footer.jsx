@@ -42,7 +42,7 @@ const Footer = () => {
                             {/* <p className="text-secondary text-[10px] font-bold uppercase tracking-widest mt-1">Limited</p> */}
                         </div>
                         <p className="text-white text-sm leading-relaxed mb-8 pr-4">
-                            “Driving Growth Through Strategy, Systems & Execution.” A leading provider of engineering, consultancy, and technical training solutions in Nigeria.
+                            “Driving Growth Through Strategy, Systems & Execution.”
                         </p>
                         <div className="flex space-x-4">
                             <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300">
@@ -88,11 +88,11 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center">
                                 <Phone size={20} className="text-secondary mr-3 flex-shrink-0" />
-                                <span>+234 806 151 3531</span>
+                                <span>+234 707 056 3194</span>
                             </li>
                             <li className="flex items-center">
                                 <Mail size={20} className="text-secondary mr-3 flex-shrink-0" />
-                                <span>epipyltd@gmail.com</span>
+                                <span>info@epipy.com</span>
                             </li>
                         </ul>
                     </div>

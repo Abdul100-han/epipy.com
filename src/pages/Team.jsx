@@ -5,7 +5,7 @@ import mubarakAminu from '../assets/team/Mubarak Aminu.jpeg';
 import toheedOlaitan from '../assets/team/Aliyu Toheeb Olaitan.jpeg';
 import abdulsalamMuhammad from '../assets/team/Abdulsalam Muhammad.jpeg';
 import ummaMohammed from '../assets/team/Umma Mohammed Abdullahi.jpeg';
-import matthew from '../assets/team/marthew epipy.jpeg';
+import matthew from '../assets/team/mathew.jpeg';
 
 const Team = () => {
     const teamMembers = [

@@ -17,12 +17,12 @@ const Contact = () => {
         {
             icon: <Mail className="w-6 h-6 text-secondary" />,
             title: "Email",
-            value: "epipyltd@gmail.com"
+            value: "info@epipy.com"
         },
         {
             icon: <Phone className="w-6 h-6 text-secondary" />,
             title: "Phone",
-            value: "+234 806 151 3531"
+            value: "+234 707 056 3194"
         }
     ];
 
@@ -68,7 +68,7 @@ const Contact = () => {
                             <h2 className="text-3xl md:text-4xl font-black text-white mb-4">Start a Conversation</h2>
                             <p className="text-white mb-10 text-lg font-medium">We are ready to partner with you for strategic growth and impact.</p>
                             <a
-                                href="mailto:epipyltd@gmail.com"
+                                href="mailto:info@epipy.com"
                                 className="inline-flex items-center space-x-3 px-12 py-5 bg-secondary text-white font-black rounded-xl border border-white hover:bg-white hover:text-primary transition-all transform hover:scale-105"
                             >
                                 <span>WORK WITH EPIPY</span>
